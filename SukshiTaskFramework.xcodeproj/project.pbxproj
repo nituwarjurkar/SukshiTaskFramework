@@ -10,6 +10,11 @@
 		2838335D249749E00060785A /* SukshiTaskFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28383353249749DF0060785A /* SukshiTaskFramework.framework */; };
 		28383362249749E00060785A /* SukshiTaskFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28383361249749E00060785A /* SukshiTaskFrameworkTests.swift */; };
 		28383364249749E00060785A /* SukshiTaskFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 28383356249749DF0060785A /* SukshiTaskFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2838337324974D7B0060785A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838337124974D7B0060785A /* CameraViewController.swift */; };
+		2838337424974D7B0060785A /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2838337224974D7B0060785A /* CameraViewController.xib */; };
+		283833B7249788B60060785A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283833B6249788B60060785A /* Extensions.swift */; };
+		283833B9249788CA0060785A /* ALLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283833B8249788CA0060785A /* ALLoadingView.swift */; };
+		283833BB249789070060785A /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283833BA249789070060785A /* Reach.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		2838335C249749E00060785A /* SukshiTaskFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SukshiTaskFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28383361249749E00060785A /* SukshiTaskFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SukshiTaskFrameworkTests.swift; sourceTree = "<group>"; };
 		28383363249749E00060785A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2838337124974D7B0060785A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2838337224974D7B0060785A /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		283833B6249788B60060785A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		283833B8249788CA0060785A /* ALLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALLoadingView.swift; sourceTree = "<group>"; };
+		283833BA249789070060785A /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,11 @@
 			children = (
 				28383356249749DF0060785A /* SukshiTaskFramework.h */,
 				28383357249749E00060785A /* Info.plist */,
+				2838337124974D7B0060785A /* CameraViewController.swift */,
+				2838337224974D7B0060785A /* CameraViewController.xib */,
+				283833B8249788CA0060785A /* ALLoadingView.swift */,
+				283833B6249788B60060785A /* Extensions.swift */,
+				283833BA249789070060785A /* Reach.swift */,
 			);
 			path = SukshiTaskFramework;
 			sourceTree = "<group>";
@@ -148,6 +163,7 @@
 				TargetAttributes = {
 					28383352249749DF0060785A = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					2838335B249749E00060785A = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -178,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2838337424974D7B0060785A /* CameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2838337324974D7B0060785A /* CameraViewController.swift in Sources */,
+				283833BB249789070060785A /* Reach.swift in Sources */,
+				283833B9249788CA0060785A /* ALLoadingView.swift in Sources */,
+				283833B7249788B60060785A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +361,7 @@
 		28383368249749E00060785A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P57J4SS79K;
@@ -348,6 +370,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SukshiTaskFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.SukshiTaskFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +388,7 @@
 		28383369249749E00060785A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P57J4SS79K;
@@ -372,6 +397,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SukshiTaskFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +414,7 @@
 		2838336B249749E00060785A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P57J4SS79K;
 				INFOPLIST_FILE = SukshiTaskFrameworkTests/Info.plist;
@@ -406,6 +433,7 @@
 		2838336C249749E00060785A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P57J4SS79K;
 				INFOPLIST_FILE = SukshiTaskFrameworkTests/Info.plist;
